@@ -5,6 +5,6 @@ steps:
     args: ['clean','package','-Dmaven.test.skip=true']
 
     #deploy jar file
-  # - name: maven:3-jdk-8 
-  #   entrypoint: mvn
-  #   args: ['clean','release']  
+  - name: maven:3-jdk-8 
+    entrypoint: mvn
+    args: ['clean','release']  
