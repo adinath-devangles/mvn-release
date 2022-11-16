@@ -6,7 +6,7 @@
     <artifactId>VersioningDemo</artifactId>
     <version>1.12</version>
 
-    <!-- <distributionManagement>
+    <distributionManagement>
         <snapshotRepository>
         <id>artifact-registry</id>
         <url>artifactregistry://us-central1-maven.pkg.dev/da-poc-2022/maven-repo</url>
@@ -15,7 +15,7 @@
         <id>artifact-registry</id>
         <url>artifactregistry://us-central1-maven.pkg.dev/da-poc-2022/maven-repo</url>
         </repository>
-    </distributionManagement> -->
+    </distributionManagement>
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -27,7 +27,7 @@
         <archetype.encoding>${encoding}</archetype.encoding>
     </properties>
 
-    <!-- <repositories>
+    <repositories>
         <repository>
         <id>artifact-registry</id>
         <url>artifactregistry://us-central1-maven.pkg.dev/da-poc-2022/maven-repo</url>
@@ -38,7 +38,7 @@
             <enabled>true</enabled>
         </snapshots>
         </repository>
-    </repositories> -->
+    </repositories>
 
     <scm>
         <connection>scm:https://github.com/adinath-devangles/mvn-release.git</connection>
