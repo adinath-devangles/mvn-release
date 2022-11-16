@@ -44,7 +44,6 @@
         <connection>scm:git:git@github.com:adinath-devangles/mvn-release.git</connection>
         <developerConnection>scm:git:git@github.com:adinath-devangles/mvn-release.git</developerConnection>
         <url>https://github.com/adinath-devangles/mvn-release.git</url>
-        <tag>1.12</tag>
     </scm>
 
     <build>
