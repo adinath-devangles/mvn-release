@@ -1,7 +1,0 @@
-#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed Nov 16 10:45:23 UTC 2022
-VersioningDemo-1.6-SNAPSHOT.pom>=
-VersioningDemo-1.6-SNAPSHOT-sources.jar>=
-VersioningDemo-1.6-SNAPSHOT-javadoc.jar>=
-VersioningDemo-1.6-SNAPSHOT-jar-with-dependencies.jar>=
-VersioningDemo-1.6-SNAPSHOT.jar>=
