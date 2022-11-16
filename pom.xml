@@ -41,10 +41,10 @@
     </repositories> -->
 
     <scm>
-        <connection>scm:git:https://github.com/adinath-devangles/mvn-release.git</connection>
-        <developerConnection>scm:git:https://github.com/adinath-devangles/mvn-release.git</developerConnection>
-        <url>https://github.com/adinath-devangles/mvn-release.git</url>
-        <tag>v@{project.version}</tag>
+        <connection>scm:git:git@github.com:adinath-devangles/mvn-release.git</connection>
+        <developerConnection>scm:git:git@github.com:adinath-devangles/mvn-release.git</developerConnection>
+        <url>git@github.com:adinath-devangles/mvn-release.git</url>
+        <tag>@{project.version}</tag>
     </scm>
 
     <build>
