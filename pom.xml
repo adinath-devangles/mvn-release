@@ -6,6 +6,17 @@
     <artifactId>VersioningDemo</artifactId>
     <version>0.11-SNAPSHOT</version>
 
+    <distributionManagement>
+        <snapshotRepository>
+        <id>artifact-registry</id>
+        <url>artifactregistry://us-central1-maven.pkg.dev/da-poc-2022/maven-repo</url>
+        </snapshotRepository>
+        <repository>
+        <id>artifact-registry</id>
+        <url>artifactregistry://us-central1-maven.pkg.dev/da-poc-2022/maven-repo</url>
+        </repository>
+    </distributionManagement>
+
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -16,6 +27,19 @@
         <archetype.encoding>${encoding}</archetype.encoding>
     </properties>
 
+    <repositories>
+        <repository>
+        <id>artifact-registry</id>
+        <url>artifactregistry://us-central1-maven.pkg.dev/da-poc-2022/maven-repo</url>
+        <releases>
+            <enabled>true</enabled>
+        </releases>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+        </repository>
+    </repositories>
+
     <scm>
         <connection>scm:git:https://github.com/adinath-devangles/mvn-release.git</connection>
         <developerConnection>scm:git:https://github.com/adinath-devangles/mvn-release.git</developerConnection>
@@ -24,6 +48,13 @@
     </scm>
 
     <build>
+        <extensions>
+        <extension>
+            <groupId>com.google.cloud.artifactregistry</groupId>
+            <artifactId>artifactregistry-maven-wagon</artifactId>
+            <version>2.1.0</version>
+        </extension>
+        </extensions>
         <plugins>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
@@ -60,5 +91,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
