@@ -4,7 +4,7 @@
 
     <groupId>org.ea</groupId>
     <artifactId>VersioningDemo</artifactId>
-    <version>1.1</version>
+    <version>1.2-SNAPSHOT</version>
 
     <distributionManagement>
         <snapshotRepository>
@@ -44,7 +44,7 @@
         <connection>scm:git:https://github.com/adinath-devangles/mvn-release.git</connection>
         <developerConnection>scm:git:https://github.com/adinath-devangles/mvn-release.git</developerConnection>
         <url>https://github.com/adinath-devangles/mvn-release.git</url>
-        <tag>1.1</tag>
+        <tag>v@{project.version}</tag>
     </scm>
 
     <build>
