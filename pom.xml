@@ -4,7 +4,7 @@
 
     <groupId>org.ea</groupId>
     <artifactId>VersioningDemo</artifactId>
-    <version>1.4-SNAPSHOT</version>
+    <version>1.5-SNAPSHOT</version>
 
     <distributionManagement>
         <snapshotRepository>
