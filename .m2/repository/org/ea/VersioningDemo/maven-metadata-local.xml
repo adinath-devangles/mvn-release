@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.ea</groupId>
+  <artifactId>VersioningDemo</artifactId>
+  <versioning>
+    <versions>
+      <version>1.6-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20221116104523</lastUpdated>
+  </versioning>
+</metadata>
