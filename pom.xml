@@ -4,16 +4,7 @@
 
     <groupId>org.ea</groupId>
     <artifactId>VersioningDemo</artifactId>
-    <version>1.7-SNAPSHOT</version>
-
-<!-- <distributionManagement>
-   <repository>
-     <id>github</id>
-     <name>GitHub OWNER Apache Maven Packages</name>
-     <url>https://maven.pkg.github.com/adinath-devangles/mvn-release/</url>
-   </repository>
-</distributionManagement> -->
-
+    <version>1.8-SNAPSHOT</version>
 
     <distributionManagement>
         <snapshotRepository>
