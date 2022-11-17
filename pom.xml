@@ -10,7 +10,7 @@
         <repository>
             <id>github</id>
             <name>GitHub</name>
-            <url>https://maven.pkg.github.com/${git.repository}</url>
+            <url>https://maven.pkg.github.com/adinath-devangles/mvn-release.git</url>
         </repository>
     </distributionManagement>
 
