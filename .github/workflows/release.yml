@@ -16,18 +16,18 @@ jobs:
       - name: Checkout project
         uses: actions/checkout@v3
 
-      # - id: 'auth'
-      #   name: 'Authenticate to Google Cloud'
-      #   uses: 'google-github-actions/auth@v1'
-      #   with:
-      #     credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}'
+      - id: 'auth'
+        name: 'Authenticate to Google Cloud'
+        uses: 'google-github-actions/auth@v1'
+        with:
+          credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}'
 
-      # - name: Login to Artifact Registry
-      #   uses: google-github-actions/auth@v1
-      #   run: |
-      #       gcloud config set account github-action@da-poc-2022.iam.gserviceaccount.com
+      - name: Login to Artifact Registry
+        uses: google-github-actions/auth@v1
+        run: |
+            gcloud config set account github-action@da-poc-2022.iam.gserviceaccount.com
               
-      #       gcloud auth activate-service-account github-action@da-poc-2022.iam.gserviceaccount.com --key-file=$GOOGLE_APPLICATION_CREDENTIALS
+            gcloud auth activate-service-account github-action@da-poc-2022.iam.gserviceaccount.com --key-file=$GOOGLE_APPLICATION_CREDENTIALS
         # with:
         #   registry: us-central1-maven.pkg.dev
         #   username: oauth2accesstoken
