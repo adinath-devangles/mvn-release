@@ -11,22 +11,20 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read    
     steps:
       - name: Checkout project
-        uses: actions/checkout@v2
-      - name: Cache local Maven repository
-        uses: actions/cache@v2
-        with:
-          path: ~/.m2/repository
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-          restore-keys: ${{ runner.os }}-maven-
+        uses: actions/checkout@v3
 
       - name: Setup Java JDK
         uses: actions/setup-java@v3
         with:
           java-version: '17'
           distribution: 'adopt'
-          server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
+          server-id: mvn-repo # Value of the distributionManagement/repository/id field of the pom.xml
+          registry-url: https://maven.pkg.github.com
           settings-path: ${{ github.workspace }} # location for the settings.xml file
 
       - name: Configure Git user
