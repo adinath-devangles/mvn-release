@@ -23,7 +23,8 @@ jobs:
         with:
           java-version: '17'
           distribution: 'adopt'
-          server-id: mvn-repo # Value of the distributionManagement/repository/id field of the pom.xml
+          server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
+          registry-url: https://maven.pkg.github.com
           settings-path: ${{ github.workspace }} # location for the settings.xml file
 
       - name: Configure Git user
