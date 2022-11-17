@@ -4,16 +4,13 @@
 
     <groupId>org.ea</groupId>
     <artifactId>VersioningDemo</artifactId>
-    <version>1.15-SNAPSHOT</version>
+    <version>1.2.0-SNAPSHOT</version>
 
     <distributionManagement>
-        <snapshotRepository>
-        <id>artifact-registry</id>
-        <url>artifactregistry://us-central1-maven.pkg.dev/da-poc-2022/maven-repo</url>
-        </snapshotRepository>
         <repository>
-        <id>artifact-registry</id>
-        <url>artifactregistry://us-central1-maven.pkg.dev/da-poc-2022/maven-repo</url>
+            <id>github</id>
+            <name>GitHub</name>
+            <url>https://maven.pkg.github.com/${git.repository}</url>
         </repository>
     </distributionManagement>
 
@@ -27,22 +24,9 @@
         <archetype.encoding>${encoding}</archetype.encoding>
     </properties>
 
-    <repositories>
-        <repository>
-        <id>artifact-registry</id>
-        <url>artifactregistry://us-central1-maven.pkg.dev/da-poc-2022/maven-repo</url>
-        <releases>
-            <enabled>true</enabled>
-        </releases>
-        <snapshots>
-            <enabled>true</enabled>
-        </snapshots>
-        </repository>
-    </repositories>
-
     <scm>
-        <connection>scm:git:git@github.com:adinath-devangles/mvn-release.git</connection>
-        <developerConnection>scm:git:git@github.com:adinath-devangles/mvn-release.git</developerConnection>
+        <connection>scm:git:https://github.com/${git.repository}.git</connection>
+        <developerConnection>scm:git:https://github.com/${git.repository}.git</developerConnection>
         <url>https://github.com/adinath-devangles/mvn-release.git</url>
     </scm>
 
