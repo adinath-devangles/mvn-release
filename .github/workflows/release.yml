@@ -35,7 +35,6 @@ jobs:
           credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}'
 
       - name: Login to Artifact Registry
-        uses: google-github-actions/auth@v1
         run: |
             gcloud config set account github-action@da-poc-2022.iam.gserviceaccount.com
               
