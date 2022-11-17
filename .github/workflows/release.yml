@@ -23,11 +23,15 @@ jobs:
           credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}'
 
       - name: Login to Artifact Registry
-        uses: docker/login-action@v1
-        with:
-          registry: us-central1-maven.pkg.dev
-          username: oauth2accesstoken
-          password: ${{ steps.auth.outputs.access_token }}        
+        uses: google-github-actions/auth@v1
+        run: |
+            gcloud config set account github-action@da-poc-2022.iam.gserviceaccount.com
+              
+            gcloud auth activate-service-account github-action@da-poc-2022.iam.gserviceaccount.com --key-file=$GOOGLE_APPLICATION_CREDENTIALS
+        # with:
+        #   registry: us-central1-maven.pkg.dev
+        #   username: oauth2accesstoken
+        #   password: ${{ steps.auth.outputs.access_token }}        
 
       - name: Setup Java JDK
         uses: actions/setup-java@v3
