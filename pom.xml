@@ -39,20 +39,20 @@
         <project.resources.sourceEncoding>${encoding}</project.resources.sourceEncoding>
         <archetype.encoding>${encoding}</archetype.encoding>
     </properties>
-
+<!-- 
     <scm>
         <connection>scm:git:https://github.com/adinath-devangles/mvn-release.git</connection>
         <developerConnection>scm:git:https://github.com/adinath-devangles/mvn-release.git</developerConnection>
         <url>https://github.com/adinath-devangles/mvn-release.git</url>
         <tag>v@{project.version}</tag>
-  </scm>
+  </scm> -->
 
-     <!-- <scm>
+     <scm>
         <connection>scm:git:git@github.com:adinath-devangles/mvn-release.git</connection>
         <developerConnection>scm:git:git@github.com:adinath-devangles/mvn-release.git</developerConnection>
         <url>https://github.com/adinath-devangles/mvn-release.git</url>
         <tag>v@{project.version}</tag>
-    </scm>  -->
+    </scm> 
 
     <build>
         <extensions>
