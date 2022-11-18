@@ -103,7 +103,7 @@
                     <checkModificationExcludes>
                         <checkModificationExclude>${project.build.directory}</checkModificationExclude>
                     </checkModificationExcludes>                
-                    <localCheckout>true</localCheckout>
+                    <!-- <localCheckout>true</localCheckout> -->
                     <pushChanges>true</pushChanges>
                     <scmCommentPrefix>[ci skip]</scmCommentPrefix>
                     <tagNameFormat>@{project.version}</tagNameFormat>
