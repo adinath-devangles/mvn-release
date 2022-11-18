@@ -48,8 +48,8 @@
   </scm> -->
 
      <scm>
-        <connection>scm:git:git@github.com:adinath-devangles/mvn-release.git</connection>
-        <developerConnection>scm:git:git@github.com:adinath-devangles/mvn-release.git</developerConnection>
+        <connection>scm:git:ssh:git@github.com:adinath-devangles/mvn-release.git</connection>
+        <developerConnection>scm:git:ssh:git@github.com:adinath-devangles/mvn-release.git</developerConnection>
         <url>https://github.com/adinath-devangles/mvn-release.git</url>
         <tag>v@{project.version}</tag>
     </scm> 
